@@ -1,6 +1,10 @@
 %define name beam
-%define version 0.1
-%define release %mkrel 1
+%define snapshot 20091109
+%define version 0
+%define rel 1
+%define release %mkrel 0.%{snapshot}.%{rel}
+%define tname %{name}-0.1
+%define version 0
 
 Name:           %{name}
 Summary: 	Beam tool
@@ -11,7 +15,7 @@ Release:        %{release}
 License: 	GPL
 URL:		http://mds.mandriva.com
 Prefix:         %{_prefix}
-Source:         %{name}-%{version}.tar.bz2
+Source:         %{tname}.tar.bz2
 requires:	python lrs
 
 %description
@@ -19,7 +23,7 @@ Beam gui
 
 %prep
 rm -rf ${RPM_BUILD_ROOT}
-%setup -q -n %{name}-%{version}
+%setup -q -n %{tname}
 
 %build
 
