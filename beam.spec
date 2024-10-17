@@ -13,7 +13,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Version:        %{version}
 Release:        %{release}
 License: 	GPL
-URL:		http://mds.mandriva.com
+URL:		https://mds.mandriva.com
 Prefix:         %{_prefix}
 Source:         %{tname}.tar.bz2
 requires:	python lrs
