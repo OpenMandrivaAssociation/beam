@@ -2,7 +2,7 @@
 %define snapshot 20091109
 %define version 0
 %define rel 1
-%define release %mkrel 0.%{snapshot}.%{rel}
+%define release 0.%{snapshot}.%{rel}.1
 %define tname %{name}-0.1
 %define version 0
 
